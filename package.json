@@ -1,0 +1,28 @@
+{
+  "name": "compare",
+  "version": "1.0.0",
+  "description": "ES6 utility for comparing primitives (boolean, number, string, symbol, null, undefine) and oject data types.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --compilers --no-deprecation js:babel-register",
+    "test1": "nyc mocha --compilers --no-deprecation js:babel-register --timeout 10000",
+    "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "chai": "^4.2.0",
+    "eslint": "^5.8.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.6",
+    "nyc": "^13.1.0"
+  }
+}
