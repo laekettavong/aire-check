@@ -1,0 +1,10 @@
+# testing
+.babelrc
+.eslintrc.json
+.nyc_output
+dev.notes.js
+/coverage
+/test
+.*
+*dev*
+*.lock
